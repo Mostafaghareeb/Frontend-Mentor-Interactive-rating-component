@@ -1,0 +1,131 @@
+:root {
+    --Orange: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Dark-Blue: hsl(213, 19%, 18%);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body {
+    background-color: var(--Very-Dark-Blue);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: var(--Dark-Blue);
+    height: 350px;
+    width: 350px;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.star {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: hsl(217deg 12% 63% / 13%);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.star img {
+    color: var(--Orange);
+    width: 15px;
+}
+.container h2 {
+    color: var(--White);
+    font-size: 23px;
+    margin: 25px auto 15px;
+}
+.container p {
+    color: var(--Light-Grey);
+    font-size: 13px;
+    line-height: 20px;
+    margin: auto auto 20px;
+}
+
+.rating-btns {
+    width: 100%;
+}
+.rating-btns button {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: hsl(217deg 12% 63% / 13%);
+    color: var(--Light-Grey);
+    border: none;
+    margin: 8px;
+    cursor: pointer;
+    transition: .5s;
+}
+.rating-btns button:hover {
+    background-color: var(--Orange);
+}
+.submit-btn {
+    background-color: var(--Orange);
+    border: none;
+    color: var(--Very-Dark-Blue);
+    width: 290px;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 20px auto auto 10px;
+    cursor: pointer;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+    transition: .5s;
+}
+.submit-btn:hover {
+    background-color: var(--White);
+}
+
+.active {
+    background-color: var(--White) !important;
+    color: var(--Very-Dark-Blue) !important;
+}
+
+.thanks-container {
+    display: none;
+    background-color: var(--Dark-Blue);
+    height: 350px;
+    width: 350px;
+    border-radius: 20px;
+    padding: 20px; 
+    text-align: center; 
+}
+
+.thanks-container img {
+    margin: 15px auto 20px;
+}
+
+.thanks-container .your-selected {
+    background-color: hsl(217deg 12% 63% / 13%);
+    color: var(--Orange);
+    width: 190px;
+    padding: 7px;
+    border-radius: 15px;
+    margin: auto auto 30px;
+}
+
+.thanks-container h2 {
+    color: var(--White);
+    font-size: 27px;
+    margin-bottom: 10px;
+}
+
+.thanks-container .text {
+    color: var(--Light-Grey);
+    font-size: 13.9px;
+    line-height: 20px;
+
+}
